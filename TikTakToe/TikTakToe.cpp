@@ -96,7 +96,7 @@ void deinitGame(TGame& g)
 
 void printGame(TGame& g)
 {
-	setlocale(LC_ALL, "Russian");
+	
 	cout << "     ";
 	for (size_t x = 0; x < g.SIZE; x++)
 	{
@@ -119,7 +119,7 @@ void printGame(TGame& g)
 void congrats(TGame& g)
 {
 	
-	setlocale(LC_ALL, "Russian");
+	
 	if (g.progress == WON_HUMAN)
 	{
 		
@@ -325,7 +325,7 @@ TCoord getAICoord(TGame& g)
 
 void Zastavka()
 {
-	setlocale(LC_ALL, "Russian");
+	
 	cout << "<!!!Игра: Крестики-Нолики!!!>" << endl << endl;
 
 }
@@ -338,6 +338,7 @@ void Zastavka()
 
 int main()
 {
+	setlocale(LC_ALL, "Russian");
 	
 	TGame g;
 	Zastavka();
